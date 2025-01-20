@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Download Button</title>
+    <style>
+      /* Apply styles for centering and responsiveness */
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 25px;
+        font-size: 16px;
+        background-color: #3575ba;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: serif;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Make the button responsive on smaller screens */
+      @media (max-width: 600px) {
+        button {
+          padding: 12px 25px;
+          font-size: 14px;
+        }
+
+        h1 {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class="btn_download" onclick="window.location.href='/download'">
+        Course Certificate
+      </button>
+    </div>
+  </body>
+</html>
