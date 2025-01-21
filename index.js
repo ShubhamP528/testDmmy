@@ -13,7 +13,7 @@ app.get("/noc/Ecertificate", (req, res) => {
 
 // Endpoint to serve the file for download
 app.get("/download", (req, res) => {
-  const filePath = path.join(__dirname, "files", "example.pdf");
+  const filePath = path.join(__dirname, "files", "NPTEL24CS101S554200192.pdf");
   res.download(filePath); // The file will be downloaded
 });
 
